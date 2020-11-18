@@ -17,7 +17,9 @@ based on the script provided we are using Logistic regression model with two par
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
+The original data is downloaded from URL where it's in CSV format and then put through a method to clean the data to perform feature engienering and feature selection 
 
+as per the training script we can tune the model based on two parameters , one is regularization strength and other is max iteration , both of them have been define using random sampling and uniform method, algoritham specified in the script is logistic regression. All of the individual components have been package together in hyperdrive configuration where we can define number of run and number of concurent runs plus the metric we are trying to optimize as well as early stopping 
 
 **What are the benefits of the parameter sampler you chose?**
 

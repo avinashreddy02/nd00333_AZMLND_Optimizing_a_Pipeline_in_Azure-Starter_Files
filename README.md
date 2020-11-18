@@ -25,6 +25,7 @@ as per the training script we can tune the model based on two parameters , one i
 
 i have selected the random search sampler and benefits of using random search is that it supports both discrete and continuous values 
 and also it supports early termination for low performance runs, with this method hyper parameters are randomly selected from search space 
+
 **What are the benefits of the early stopping policy you chose?**
 
 I have selected Badit policy for early stopping 

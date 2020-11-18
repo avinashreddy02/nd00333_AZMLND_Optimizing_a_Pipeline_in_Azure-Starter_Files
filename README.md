@@ -8,18 +8,18 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
 
-This dataset is about Bank marketing which helps in identifying a whether a customer will opt in to enroll at bank or not using machin learning algoritham 
+This dataset is about Bank marketing which helps in identifying whether a customer will opt in to enroll at bank or not using machin learning algoritham 
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
-based on the script provided we are using Logistic regression model with two parameters which could be treated as hyperparameters and i have tried different values to identify the best model , and the best performing model is with a reverse reularization strength of 0.5 and max iterations 60
+based on the script provided we are using Logistic regression model with two parameters which could be treated as hyperparameters and i have tried different values to identify the best model , and the best performing model is with a reverse reularization strength of of smaller values 
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
 The original data is downloaded from URL where it's in CSV format and then put through a method to clean the data to perform feature engienering and feature selection 
 
-as per the training script we can tune the model based on two parameters , one is regularization strength and other is max iteration , both of them have been define using random sampling and uniform method, algoritham specified in the script is logistic regression. All of the individual components have been package together in hyperdrive configuration where we can define number of run and number of concurent runs plus the metric we are trying to optimize as well as early stopping 
+as per the training script we can tune the model based on two parameters , one is regularization strength and other is max iteration , both of them have been defined using random sampling and uniform method, algoritham specified in the script is logistic regression. All of the individual components have been packaged together in hyperdrive configuration where we can define number of run and number of concurent runs plus the metric we are trying to optimize as well as early stopping 
 
 **What are the benefits of the parameter sampler you chose?**
 
@@ -38,18 +38,20 @@ AUtoML has run the training on multiple models and out of them the best one is v
 
 voting ensemble is a model which predicts the output based on majority voting of multiple small models , for example if 4 models predicted output as 1,1,1,0 for one entry then the prediciton is based on the majority voting 
 
+some of the hyperparameters that are generated for the model as number of iterations, training type and subsampling 
+
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
-Both the models have similar accuracy and their performance is similar as well , there's a lot of difference in architecture where in with hyperdrive we have tuned only one model which is Logistic regression but when it comes to automl same dataset has been used to train multiple different models which provides luxury of picking the best model of all the existing ones, the difference in accuracy is because of the different type of ML algorithams used for training 
+Both the models have similar accuracy and their performance is similar as well , there's a lot of difference in architecture where in with hyperdrive we have trained/tuned only one model which is Logistic regression but when it comes to automl same dataset has been used to train multiple different models which provides luxury of picking the best model of all the existing ones, the difference in accuracy is because of the different type of ML algorithams used for training 
 
-with automl we also get notifed of alerts like when the data set is imbalanced like which is really helpful in picking the best metric and best model which handles the imbalance as well
+with automl we also get notifed of alerts like when the data set is imbalanced like which is really helpful in picking the best metric and best model which handles the imbalance as well , this is called data gaurd railing in AutoML
 
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
-one of the areas is gathering more data to balance the data set , currenlty data set is imbalanced 
+one of the areas is gathering more data to balance the data set , currenlty data set is imbalanced and also tuning the logistic regression with different hyperparameters instead of regularization 
 
 
 ## Proof of cluster clean up

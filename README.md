@@ -8,7 +8,11 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
 
+This dataset is about Bank marketing which helps in identifying a whether a customer will opt in to enroll at bank or not using machin learning algoritham 
+
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+
+based on the script provided we are using Logistic regression model with two parameters which could be treated as hyperparameters and i have tried different values to identify the best model , and the best performing model is with a reverse reularization strength of 0.5 and max iterations of 100 
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**

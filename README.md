@@ -36,6 +36,8 @@ Bandit policy is based on slack factor/slack amount and evaluation interval. Ban
 
 AUtoML has run the training on multiple models and out of them the best one is voting ensemble and the accuracy is 91%
 
+voting ensemble is a model which predicts the output based on majority voting of multiple small models , for example if 4 models predicted output as 1,1,1,0 for one entry then the prediciton is based on the majority voting 
+
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
@@ -55,5 +57,5 @@ one of the areas is gathering more data to balance the data set , currenlty data
 yes i have cleaned the cluster 
 
 **Image of cluster marked for deletion**
-
+i have added the deletion image in the repository 
 

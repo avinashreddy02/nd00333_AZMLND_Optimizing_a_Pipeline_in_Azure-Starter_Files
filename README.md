@@ -39,6 +39,10 @@ AUtoML has run the training on multiple models and out of them the best one is
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
+Both the models have similar accuracy and their performance is similar as well , there's a lot of difference in architecture where in with hyperdrive we have tuned only one model which is Logistic regression but when it comes to automl same dataset has been used to train multiple different models which provides luxury of picking the best model of all the existing ones, the difference in accuracy is because of the different type of ML algorithams used for training 
+
+with automl we also get notifed of alerts like when the data set is imbalanced like which is really helpful in picking the best metric and best model which handles the imbalance as well
+
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**

@@ -12,7 +12,7 @@ This dataset is about Bank marketing which helps in identifying whether a custom
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
 
-based on the script provided we are using Logistic regression model with two parameters which could be treated as hyperparameters and i have tried different values to identify the best model , and the best performing model is with a reverse reularization strength of of smaller values 
+based on the script provided we are using Logistic regression model with two parameters which could be treated as hyperparameters and i have tried different values to identify the best model , and the best performing model is with a reverse reularization strength of of smaller values which is of 0.9 and max iterations of 20
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
@@ -41,6 +41,15 @@ voting ensemble is a model which predicts the output based on majority voting of
 
 some of the hyperparameters that are generated for the model as number of iterations, training type and subsampling 
 
+experiment timeout minutes to set to 30 mins to expire the training if it takes more than 30 mins 
+task is determing to perfrom regression or classification , in this case bank marketing is classification to see if a customer would opt in or not 
+compute target is used to define CPU and GPU configuration and number of nodes needed 
+Training data is input as data 
+label column is used to determine what we are trying to predict 
+number of cross validations is to split the training set and perform cross validation 
+primary metric helps us in achieving bussines objective 
+early stopping will help when the model is overfitting and over converging 
+
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
@@ -54,6 +63,7 @@ with automl we also get notifed of alerts like when the data set is imbalanced l
 
 one of the areas is gathering more data to balance the data set , currenlty data set is imbalanced and also tuning the logistic regression with different hyperparameters instead of regularization 
 
+we can also make new columns with existing ones with feature engineering 
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**

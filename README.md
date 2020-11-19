@@ -42,12 +42,19 @@ voting ensemble is a model which predicts the output based on majority voting of
 some of the hyperparameters that are generated for the model as number of iterations, training type and subsampling 
 
 experiment timeout minutes to set to 30 mins to expire the training if it takes more than 30 mins 
-task is determing to perfrom regression or classification , in this case bank marketing is classification to see if a customer would opt in or not 
+
+task is identigying  to perfrom regression or classification , in this case bank marketing is classification to see if a customer would opt in or not
+
 compute target is used to define CPU and GPU configuration and number of nodes needed 
+
 Training data is input as data 
+
 label column is used to determine what we are trying to predict 
+
 number of cross validations is to split the training set and perform cross validation 
-primary metric helps us in achieving bussines objective 
+
+primary metric helps us in achieving bussines objective
+
 early stopping will help when the model is overfitting and over converging 
 
 ## Pipeline comparison
